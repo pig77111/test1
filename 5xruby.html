@@ -41,6 +41,11 @@
             color: #555555;
         }
 
+        .gray{
+            color: #555555;
+
+        }
+
         .chapter::before {
             content: " ";
             background-color: #c4345f;
@@ -73,6 +78,14 @@
             background-color: #d3d7da;
         }
 
+        .classopen{
+            height: 570px;
+        }
+
+        .card-bottom{
+            height: 81.5px;
+        }
+
 
 
 
@@ -102,15 +115,28 @@
             flex-direction: row;
         }
 
+        .knowmore a{
+            color: #d90845;
+        }
+
+        .knowmore a:hover{
+            text-decoration: none;
+            /* color: #d90845; */
+
+        }
+
+
+        /* 公司地址區 icon圖片 */
+
         .picgroup .fab {
             font-size: 40px;
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             /* line-width: 80px; */
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(247, 108, 108);
+            background-color: #a18e94;
             border-radius: 50px;
             color: #ffffff;
             margin: 0 10px;
@@ -127,25 +153,41 @@
 
         }
 
-        .footer li a {
+        .footer .p ,.footer li a {
             text-decoration: none;
             /* color: gray; */
-            line-height: 1.5rem;
-            color: hotpink;
+            line-height: 2.5em;
+            /* color: rgb(255, 195, 105); */
             /* text-align: center; */
 
-        }
-
-        .footer li a .fab {
-            color: green;
-        }
-
-
-        .footer .p {
-            font-size: 14px;
+        
+            font-size: 15px;
+            color: #555555;
 
             /* line-height: 2.2rem; */
         }
+
+        
+
+        /* .footer  a::before{
+            width: 18px;
+            text-align: center;
+
+        } */
+
+
+
+         /* 公司地址區 icon圖片 */
+
+        .footer li a .fab {
+            font-size: 20px;
+            color: #555555;
+            width: 30px;
+            text-align: center;
+        }
+
+
+       
 
         .footer .card {
             background-color: rgba(228, 223, 223, 0.947);
@@ -154,9 +196,16 @@
 
 
 
-        .footer .fa-2x {
-            font-size: 2em;
+        /* .footer .fa-2x {
+            font-size: 18px;
+        } */
+
+        .fa-contact-font{
+            font-size: 20px;
+            width: 30px;
         }
+
+
 
         .bg-eee {
             background-color: #eee;
@@ -276,6 +325,13 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+            
         </div>
 
         <div class="row class ">
@@ -284,22 +340,22 @@
             </div>
             <div class="container ">
                 <div class="row ">
-                    <div class="col-12 col-md-4 mb-5">
+                    <div class="classopen col-12 col-md-4 mb-5">
 
-                        <div class="card">
+                        <div class="card h-100">
                             <img src="https://picsum.photos/250/200/?random=6" class="card-to-top w-100">
                             <div class="card-body">
                                 <h5>
                                     <span class="badge badge-danger">開放報名中</span>
                                 </h5>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <h5 class="card-title">網頁前端設計女性專班 - 假日班</h5>
                             </div>
-                            <div class="card" style="">
+                            <div class="card">
+                                <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+                            </div>
+                            <div class="card-bottom" style="">
                                 <div class="list-group list-group-flush d-flex flex-row">
-                                  <div class="list-group-item">開課時間 </div>
+                                  <div class="list-group-item gray">開課時間 </div>
                                     <div class="timeopen my-2">
 
                                         <h5>
@@ -307,7 +363,7 @@
                                         </h5>
 
                                         <h5>
-                                            <span class="badge badge-secondary">7月｜假日班</span>
+                                            <span class="badge badge-secondary">11月｜假日班</span>
                                         </h5>
                                             
                                         
@@ -322,31 +378,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-5">
+                    <div class="classopen col-12 col-md-4 mb-5">
 
-                        <div class="card">
+                        <div class="card h-100">
                             <img src="https://picsum.photos/250/200/?random=9" class="card-to-top w-100">
                             <div class="card-body">
                                 <h5>
                                     <span class="badge badge-danger">開放報名中</span>
                                 </h5>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <h5 class="card-title">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h5>
+                                
                             </div>
-                            <div class="card" style="">
+                            <div class="card">
+                                <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+                            </div>
+                            <div class="card-bottom" style="">
                                 <div class="list-group list-group-flush d-flex flex-row">
-                                  <div class="list-group-item">開課時間 </div>
+                                  <div class="list-group-item gray">開課時間 </div>
                                     <div class="timeopen my-2">
 
                                         <h5>
-                                            <span class="badge badge-secondary">7月｜假日班</span>
+                                            <span class="badge badge-secondary">8月｜假日班</span>
                                         </h5>
 
-                                        <h5>
-                                            <span class="badge badge-secondary">7月｜假日班</span>
-                                        </h5>
+                                        
                                             
                                         
                                     </div>
@@ -360,31 +415,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 mb-5">
+                    <div class="classopen col-12 col-md-4 mb-5">
 
-                        <div class="card">
+                        <div class="card h-100">
                             <img src="https://picsum.photos/250/200/?random=12" class="card-to-top w-100">
                             <div class="card-body">
                                 <h5>
                                     <span class="badge badge-danger">開放報名中</span>
                                 </h5>
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk
-                                    of the card's content.</p>
+                                <h5 class="card-title">HTML 網頁設計新手村 - 假日班</h5>
+                                
                             </div>
-                            <div class="card" style="">
+                            <div class="card">
+                                <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+                            </div>
+                            <div class="card-bottom" style="">
                                 <div class="list-group list-group-flush d-flex flex-row">
-                                  <div class="list-group-item">開課時間 </div>
+                                  <div class="list-group-item gray">開課時間 </div>
                                     <div class="timeopen my-2">
 
                                         <h5>
-                                            <span class="badge badge-secondary">7月｜假日班</span>
+                                            <span class="badge badge-secondary">8月｜假日班</span>
                                         </h5>
 
-                                        <h5>
-                                            <span class="badge badge-secondary">7月｜假日班</span>
-                                        </h5>
+                                        
                                             
                                         
                                     </div>
@@ -401,7 +455,7 @@
 
                 </div>
                 <div class="row justify-content-center my-5">
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                    <button type="button" class="btn btn-danger btn-lg">看更多網頁課程</button>
 
                 </div>
             </div>
@@ -459,10 +513,12 @@
 
         <div class="knowmore my-5">
             <div class="container d-flex flex-column justify-content-center align-items-center">
-                <title class="tp d-flex justify-content-center ">title</title>
-                <p class="h3 d-flex">身體網際性感為止正常，通知麻煩一體國有四個進去，不良三星筆。</p>
-                <p class="h3">位於城市簡介興趣專業不能，心理貿易稱為。</p>
-                <div class="picgroup">
+                <title class="tp d-flex justify-content-center mb-4 gray">想更瞭解我們嗎？</title>
+                <p class="p d-flex">您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
+                   </p>
+                <p class="p"> 也可以透過社群網站隨時關注我們的動態。</p>
+
+                <div class="picgroup mt-4">
                     <i class="fab fab fab fa-facebook-f "></i>
                     <i class="fab fab fa-twitter "></i>
                 </div>
@@ -480,14 +536,14 @@
                                 <div class="card-text">
                                     <p class="card-title">追蹤</p>
                                     <ul class=" list-unstyled d-flex flex-column align-content-center p">
-                                        <li class="text-center>
+                                        <li class="my-2">
                                         <a href=" #"><i class="fab fas fa-phone-alt fa-1x"></i> 02-2331-5247</a>
                                         </li>
-                                        <li class="text-center>
+                                        <li class="my-2">
                                         <a href=" #"><i class="fab fas fa-envelope fa-1x"></i> hi@5xruby.tw
                                             </a>
                                         </li>
-                                        <li class="text-center>
+                                        <li class="my-2">
                                         <a href=" #"><i class="fab fas fa-map-marker-alt fa-1x"></i>10046 台北市中正區衡陽路 7 號
                                             5 樓</a>
                                         </li>
@@ -534,7 +590,7 @@
                             <div class="col-6 col-md-2 card-body border-info">
                                 <p class="card-title">服務項目</p>
 
-                                <p class="card-text">
+                                <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p">
                                     <li>
                                         <a href="#">專案開發
@@ -549,7 +605,7 @@
                                     </li>
 
                                 </ul>
-                                </p>
+                                </div>
 
                             </div>
                             <div class="col-6 col-md-2 card-body border-info">
@@ -557,7 +613,7 @@
 
                                 </p>
 
-                                <p class="card-text">
+                                <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p">
                                     <li>
                                         <a href="#">
@@ -577,14 +633,14 @@
                                     </li>
 
                                 </ul>
-                                </p>
+                                </div>
 
                             </div>
                             <div class="col-6 col-md-2 card-body border-info">
                                 <p class="card-title">聯絡我們
                                 </p>
 
-                                <p class="card-text">
+                                <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p">
                                     <li>
                                         <a href="#">聯絡詢價
@@ -595,13 +651,13 @@
                                     </li>
 
                                 </ul>
-                                </p>
+                                </div>
 
                             </div>
                             <div class="col-6 col-md-2 card-body border-info">
                                 <p class="card-title">幫助與政策</p>
 
-                                <p class="card-text">
+                                <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p">
                                     <li>
                                         <a href="#">常見問題</a>
@@ -614,32 +670,32 @@
                                     </li>
 
                                 </ul>
-                                </p>
+                                </div>
 
                             </div>
                             <div class="col-6 col-md-2 card-body border-info">
                                 <p class="card-title">追蹤</p>
 
-                                <p class="card-text">
+                                <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p 
                               ">
                                     <li>
-                                        <i class="fab fa-facebook-square fa-2x fa-fw"></i><a href="#">
+                                        <i class="fab fa-facebook-square fa-contact-font fa-fw"></i><a href="#">
                                             Facebook</a>
                                     </li>
                                     <li>
-                                        <i class="fab fa-github fa-2x fa-fw"></i><a href="#">
+                                        <i class="fab fa-github fa-contact-font fa-fw"></i><a href="#">
                                             Github</a>
                                     </li>
                                     <li>
-                                        <i class="fab fa-line fa-2x fa-fw"></i><a href="#">Line@</a>
+                                        <i class="fab fa-line fa-contact-font fa-fw"></i><a href="#">Line@</a>
                                     </li>
                                     <li>
-                                        <i class="fab fa-twitter fa-2x fa-fw"></i><a href="#">twitter</a>
+                                        <i class="fab fa-twitter fa-contact-font fa-fw"></i><a href="#">twitter</a>
                                     </li>
 
                                 </ul>
-                                </p>
+                                </div>
 
                             </div>
 
