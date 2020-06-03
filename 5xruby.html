@@ -75,7 +75,7 @@
         }
 
         .badge-secondary {
-            color: rgb(133, 132, 132);
+            color:rgb(101, 100, 100);
             background-color: #dcdddee2;
         }
 
@@ -401,21 +401,49 @@
     <style>
         .classopen{
             height: 550px;
+            /* transition: 2s 5s; */
+        }
+        .classopen:hover .card{
+            box-shadow: 0px 3px 10px 1px #9d9d9da3;
+            transform: translate(0,-10px);
         }
     
         .card-text-bottom{
             height: 81.5px;
         }
         /* 灰色字體大小 */
-        .card-text-bottom .p, .card-text.p{
+        .card-text-bottom .p, .card-text.p,{
             font-size: 14px;
-            color: #9d9d9de2;
+            
+        
         
         }
 
         .btn-danger{
             font-size: 18px;
             padding:1em 4em;
+        }
+        .card-title{
+            
+            font-size: 20px;
+            color: rgb(101, 100, 100);
+        }
+
+        /*開放報名中 padding */
+        span.p{
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+        /* 假日班badge padding*/
+        span.badge{
+            /* padding-top:0; */
+            font-size: 14px;
+        
+            padding: 10px 10px;
+        }
+
+        .cardp{
+            color:rgba(101, 100, 100, 0.728)
         }
     </style>
 
@@ -427,29 +455,29 @@
 
 
         <div class="container ">
-            <div class="row ">
+            <div class="row">
                 <div class="classopen col-12 col-md-4 mb-5">
 
                     <div class="card h-100">
                         <img src="class-1.jpg" class="card-to-top w-100">
                         <div class="card-body">
                             <h5>
-                                <span class="badge badge-danger">開放報名中</span>
+                                <span class="badge badge-danger p">開放報名中</span>
                             </h5>
-                            <h5 class="card-title">網頁前端設計女性專班 - 假日班</h5>
+                            <span class="card-title ">網頁前端設計女性專班 - 假日班</span>
                         </div>
 
-                        <div class="card-text ml-3 border-bottom">
+                        <div class="card-text mx-3 border-bottom">
                             <!-- card-text -->
-                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
+                            <p class="card-text mb-3 gray cardp ">講師：許國政 (Kuro Hsu)</p>
                         </div>
                         
-                        <div class="card-text-bottom ml-3 mt-3">
+                        <div class="card-text-bottom ml-3 my-3">
                             <!-- 定寬容器 -->
                             <div class="cardtext-item card-item-fluid  d-flex flex-row">
-                                <div class="gray mr-0 p">開課時間</div>
+                                <div class="gray mr-0 cardp">開課時間</div>
 
-                                <div class="timeopen row flex-column mx-3">
+                                <div class="timeopen row flex-column mx-3 ">
 
                                     
                                     <span class="badge badge-secondary">7月｜假日班</span>
@@ -476,19 +504,19 @@
                         <img src="class-2.jpg" class="card-to-top w-100">
                         <div class="card-body">
                             <h5>
-                                <span class="badge badge-danger">開放報名中</span>
+                                <span class="badge badge-danger p">開放報名中</span>
                             </h5>
-                            <h5 class="card-title">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h5>
+                            <span class="card-title">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</span>
                             
                         </div>
-                        <div class="card-text ml-3 border-bottom">
+                        <div class="card-text mx-3 border-bottom">
                             <!-- card-text -->
-                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
+                            <p class="card-text mb-3 gray cardp">講師：許國政 (Kuro Hsu)</p>
                         </div>
                         
-                        <div class="card-text-bottom ml-3 mt-3">
+                        <div class="card-text-bottom ml-3 my-3">
                             <div class="cardtext-item card-item-fluid  d-flex flex-row">
-                                <div class="gray mr-0 p">開課時間</div>
+                                <div class="gray mr-0 cardp">開課時間</div>
 
                                 <div class="timeopen row flex-column mx-3">
 
@@ -517,19 +545,19 @@
                         <img src="class-3.jpg" class="card-to-top w-100">
                         <div class="card-body">
                             <h5>
-                                <span class="badge badge-danger">開放報名中</span>
+                                <span class="badge badge-danger p">開放報名中</span>
                             </h5>
-                            <h5 class="card-title">HTML 網頁設計新手村 - 假日班</h5>
+                            <span class="card-title">HTML 網頁設計新手村 - 假日班</span>
                             
                         </div>
-                        <div class="card-text ml-3 border-bottom">
+                        <div class="card-text mx-3 border-bottom">
                             <!-- card-text -->
-                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
+                            <p class="card-text mb-3 gray cardp">講師：許國政 (Kuro Hsu)</p>
                         </div>
                         
-                        <div class="card-text-bottom ml-3 mt-3">
+                        <div class="card-text-bottom ml-3 my-3">
                             <div class="cardtext-item card-item-fluid  d-flex flex-row">
-                                <div class="gray mr-0 p">開課時間</div>
+                                <div class="gray mr-0 cardp">開課時間</div>
 
                                 <div class="timeopen row flex-column mx-3">
 
