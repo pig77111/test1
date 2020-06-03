@@ -25,7 +25,7 @@
 
         .navbar-brand-red {
             /* font-size: 16px; */
-            color: rgba(255, 20, 20, 0.906);
+            /* color: rgba(255, 20, 20, 0.906); */
             color: #d90845;
             font-size: 16px;
 
@@ -79,13 +79,7 @@
             background-color: #d3d7da;
         }
 
-        .classopen{
-            height: 570px;
-        }
-
-        .card-bottom{
-            height: 81.5px;
-        }
+        
 
 
 
@@ -93,23 +87,6 @@
 
 
 
-        .pic-service {
-            height: 80px;
-            width: 80px;
-            /* line-height: 100px; */
-            /* text-align: center; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            box-shadow: 3px 0px 5px 3px silver;
-
-            background-color: rgb(243, 83, 83);
-            color: #ffffff;
-            bottom: 110px;
-            right: 20px;
-
-        }
 
         .footer .card {
 
@@ -127,25 +104,76 @@
         }
 
 
-        /* 公司地址區 icon圖片 */
+        .pic-service {
+            height: 60px;
+            width: 60px;
+            font-size: 40px;
 
+            line-height: 60px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 3px silver;
+
+            background-color:  #d90845;
+            color: #ffffff;
+            bottom: 90px;
+            right: 20px;
+            transition: .7s .s ;
+
+        }
+
+        .pic-service:hover{
+            color: #fff;
+            box-shadow: 0px -5px 18px 10px rgba(143, 141, 141, 0.338);
+
+
+        }
+
+        .up{
+            font-size: 25px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            /* line-height: 40px; */
+            border-radius: 50%;
+            /* line-height: 30px; */
+            text-align:center;
+
+            bottom: 40px;
+            right: 15px;
+            background-color:#fff ;
+            color: #d90845;
+            box-shadow: 3px 3px 5px 2px silver;
+
+
+        }
+
+
+
+
+        
+        /*  更了解我們 下方兩個按鈕 */
         .picgroup .fab {
             font-size: 40px;
             width: 60px;
             height: 60px;
-            /* line-width: 80px; */
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #a18e94;
+            background-color: #d90845;
             border-radius: 50px;
             color: #ffffff;
             margin: 0 10px;
-
         }
 
         .picgroup {
             display: flex;
+            justify-content: center;
+
 
         }
 
@@ -154,7 +182,7 @@
 
         }
 
-        .footer .p ,.footer li a {
+        .footer .p ,.footer li a ,.copy{
             text-decoration: none;
             /* color: gray; */
             line-height: 2.5em;
@@ -163,10 +191,12 @@
 
         
             font-size: 15px;
-            color: #555555;
+            color: #888;
 
             /* line-height: 2.2rem; */
         }
+
+
 
         
 
@@ -182,17 +212,38 @@
 
         .footer li a .fab {
             font-size: 20px;
-            color: #555555;
+            color: #888888;
             width: 30px;
             text-align: center;
         }
+
+        /* footer 超連結摸到 */
+        .footer li a:hover{
+            color: #d90845;
+        }
+
+        /* 沒作用 */
+        .nav a{
+            color:rgb(156, 206, 19)
+        }
+
+        /* .nav-link > a:hover{
+            color: #d90845;
+        } */
 
 
        
 
         .footer .card {
-            background-color: rgba(228, 223, 223, 0.947);
+            /* background-color: rgba(228, 223, 223, 0.947); */
 
+        }
+        .border-copy{
+            border-color: #888888;
+
+        }
+        .copy p{
+            font-size: 13px;
         }
 
 
@@ -209,8 +260,13 @@
 
 
         .bg-eee {
-            background-color: #eee;
+            /* background-color: rgb(204, 202, 202); */
+            /* background-color: #8a8787; */
+            /* background-color: #e9e6e6d9; */
         }
+
+        
+
     </style>
 </head>
 
@@ -237,6 +293,7 @@
                 <a class="nav-item nav-link" href="#"><i class="fab fas fa-bolt"></i> 全方位課程</a>
                 <a class="nav-item nav-link" href="#">短期課程</a>
                 <a class="nav-item nav-link" href="#">專欄文章</a>
+                <a class="nav-item nav-link" href="#">專案開發</a>
                 <a class="nav-item nav-link" href="#">最新消息</a>
 
 
@@ -285,14 +342,14 @@
 
 
     <div class="cardsec ">
-        <div class="container">
+        <div class="container-fluid bg-light">
             <div class="row text-center">
-                <div class="col-12 my-5 position-relative">
+                <div class="col-12 my-5 position-relative px-5">
                     <div class="chapter tp d-flex justify-content-center">關於五倍紅寶石 About 5xRuby
                         <div />
                     </div>
                 </div>
-                <div class="row no-wrap">
+                <div class="row no-wrap px-5">
                     <div class="col-12 col-md-3 px-2 d-flex flex-column justify-content-center">
                         <div class="pic mx-auto my-5">
                             <img src="feature-1.png" alt="" class="">
@@ -339,10 +396,29 @@
 
     </div>
 
+
+
+    <style>
+        .classopen{
+            height: 550px;
+        }
+    
+        .card-text-bottom{
+            height: 81.5px;
+        }
+
+        .card-text-bottom .p, .card-text.p{
+            font-size: 14px;
+        }
+    </style>
+
+
     <div class="class">
         <div class="container text-center position-relative">
-            <p class="chapter tp d-flex justify-content-center ">熱門網頁設計課程推薦</p>
+            <p class="chapter tp d-flex justify-content-center my-5 ">熱門網頁設計課程推薦</p>
         </div>
+
+
         <div class="container ">
             <div class="row ">
                 <div class="classopen col-12 col-md-4 mb-5">
@@ -355,21 +431,25 @@
                             </h5>
                             <h5 class="card-title">網頁前端設計女性專班 - 假日班</h5>
                         </div>
-                        <div class="card">
-                            <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+
+                        <div class="card-text ml-3 border-bottom">
+                            <!-- card-text -->
+                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
                         </div>
-                        <div class="card-bottom" style="">
-                            <div class="list-group list-group-flush d-flex flex-row">
-                              <div class="list-group-item gray">開課時間 </div>
-                                <div class="timeopen my-2">
+                        
+                        <div class="card-text-bottom ml-3 mt-3 mb-3">
+                            <!-- 定寬容器 -->
+                            <div class="cardtext-item card-item-fluid  d-flex flex-row">
+                                <div class="gray mr-0 p">開課時間</div>
 
-                                    <h5>
-                                        <span class="badge badge-secondary">7月｜假日班</span>
-                                    </h5>
+                                <div class="timeopen row flex-column mx-3">
 
-                                    <h5>
-                                        <span class="badge badge-secondary">11月｜假日班</span>
-                                    </h5>
+                                    
+                                    <span class="badge badge-secondary p">7月｜假日班</span>
+                                    
+                                    
+                                    <span class="badge badge-secondary p mt-2">11月｜假日班</span>
+                                    
                                         
                                     
                                 </div>
@@ -394,18 +474,22 @@
                             <h5 class="card-title">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</h5>
                             
                         </div>
-                        <div class="card">
-                            <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+                        <div class="card-text ml-3 border-bottom">
+                            <!-- card-text -->
+                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
                         </div>
-                        <div class="card-bottom" style="">
-                            <div class="list-group list-group-flush d-flex flex-row">
-                              <div class="list-group-item gray">開課時間 </div>
-                                <div class="timeopen my-2">
+                        
+                        <div class="card-text-bottom ml-3 mt-3 mb-3">
+                            <div class="cardtext-item card-item-fluid  d-flex flex-row">
+                                <div class="gray mr-0 p">開課時間</div>
 
-                                    <h5>
-                                        <span class="badge badge-secondary">8月｜假日班</span>
-                                    </h5>
+                                <div class="timeopen row flex-column mx-3">
 
+                                    
+                                    <span class="badge badge-secondary p">7月｜假日班</span>
+                                    
+                                    
+                                    <!-- <span class="badge badge-secondary p mt-2">11月｜假日班</span> -->
                                     
                                         
                                     
@@ -431,18 +515,22 @@
                             <h5 class="card-title">HTML 網頁設計新手村 - 假日班</h5>
                             
                         </div>
-                        <div class="card">
-                            <p class="card-text mb-3 gray px-3">講師：許國政 (Kuro Hsu)</p>
+                        <div class="card-text ml-3 border-bottom">
+                            <!-- card-text -->
+                            <p class="card-text mb-3 gray p">講師：許國政 (Kuro Hsu)</p>
                         </div>
-                        <div class="card-bottom" style="">
-                            <div class="list-group list-group-flush d-flex flex-row">
-                              <div class="list-group-item gray">開課時間 </div>
-                                <div class="timeopen my-2">
+                        
+                        <div class="card-text-bottom ml-3 mt-3 mb-3">
+                            <div class="cardtext-item card-item-fluid  d-flex flex-row">
+                                <div class="gray mr-0 p">開課時間</div>
 
-                                    <h5>
-                                        <span class="badge badge-secondary">8月｜假日班</span>
-                                    </h5>
+                                <div class="timeopen row flex-column mx-3">
 
+                                    
+                                    <span class="badge badge-secondary p">11月｜假日班</span>
+                                    
+                                    
+                                    <!-- <span class="badge badge-secondary p mt-2">11月｜假日班</span> -->
                                     
                                         
                                     
@@ -463,8 +551,14 @@
                 <button type="button" class="btn btn-danger btn-lg">看更多網頁課程</button>
 
             </div>
+
+
+
         </div>
     </div>
+
+
+
 
     <div class="classmate">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -530,7 +624,7 @@
         </div>
     </div>
 
-    <div class="footer w-100 mt-5">
+    <div class="footer w-100 mt-5 bg-light">
         <div class="container-fluid m-0 p-0">
             <div class="row m-0">
                 <div class="col-12 col-md-4 p">
@@ -539,7 +633,12 @@
                         <div class="col-12 card-body border-info ">
 
                             <div class="card-text">
-                                <p class="card-title">追蹤</p>
+                                <div class="navbar-brand-red ml-3">5x{
+                                    <i class="fab fas fa-gem fa-2x"></i>
+                                    .tw}
+                                    <a class="navbar-brand-red " href="#">專業程式教育機構</a>
+                                </div>
+                                
                                 <ul class=" list-unstyled d-flex flex-column align-content-center p">
                                     <li class="my-2">
                                     <a href=" #"><i class="fab fas fa-phone-alt fa-1x"></i> 02-2331-5247</a>
@@ -567,7 +666,7 @@
 
 
                 </div>
-                <div class="col-12 col-md-8 p">
+                <div class="col-12 col-md-8 p ">
 
                     <div class="row">
                         <div class="col-6 col-md-2 card-body border-info ">
@@ -710,7 +809,7 @@
 
 
 
-                <div class="col-12 border-secondary border-top py-5 d-flex justify-content-center">
+                <div class="col-12 border-copy border-top py-3 d-flex justify-content-center copy">
                     <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
                 </div>
 
@@ -727,12 +826,12 @@
 
     </div>
 
-    <div class="pagebtn pic-service position-fixed">
-        <i class="fad fab fa-facebook-messenger fa-3x"></i>
+    <buttom class=" pagebtn pic-service position-fixed">
+        <i class="fad fab fa-facebook-messenger "></i>
 
-    </div>
+    </buttom>
 
-    <div class="pagebtn up position-fixed"><i class="fad fas fa-angle-up fa-3x"></i>
+    <div class="pagebtn up position-fixed"><i class="fad fas fa-angle-up "></i>
     </div>
 
 
