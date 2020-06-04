@@ -83,7 +83,10 @@
 
 
 
-
+        .footer>.p{
+            color: blue;
+            font-size: 12px;
+        }
 
 
 
@@ -92,6 +95,10 @@
         .footer .card {
 
             flex-direction: row;
+        }
+
+        .knowmore {
+            background-color: #fff;
         }
 
         .knowmore a {
@@ -187,16 +194,19 @@
         .footer li a,
         .copy {
             text-decoration: none;
-            /* color: gray; */
-            line-height: 2.5em;
-            /* color: rgb(255, 195, 105); */
-            /* text-align: center; */
+
+            line-height: 1.8em;
+     
 
 
             font-size: 15px;
             color: #888;
 
-            /* line-height: 2.2rem; */
+        }
+
+        .footer-card-title{
+            font-size: 15px;
+            color: rgb(75, 75, 78);
         }
 
 
@@ -230,9 +240,9 @@
             color: rgb(156, 206, 19)
         }
 
-        /* .nav-link > a:hover{
-            color: #d90845;
-        } */
+        a.nav-item:hover{
+            color: #d90845 !important;
+        }
 
 
 
@@ -275,14 +285,14 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top">
         <div class="navbar-brand-red ml-3">5x{
             <i class="fab fas fa-gem fa-2x"></i>
             .tw}
             <a class="navbar-brand-red " href="#">專業程式教育機構</a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler bg-danger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -410,6 +420,14 @@
             box-shadow: 0px 3px 10px 1px #9d9d9da3;
             transform: translate(0, -10px);
         }
+
+
+        .navbar {
+            /* 陰影 */
+
+            box-shadow: 0px 3px 5px 1px #bfa4a4b6;
+        }
+
 
         .card-text-bottom {
             height: 81.5px;
@@ -641,7 +659,7 @@
     </style>
 
 
-    <div class="classmate bg-light">
+    <div class="classmate bg-light pt-4">
 
         <div class="container text-center position-relative ">
             <p class="chapter tp d-flex justify-content-center my-5  ">網頁課程推薦</p>
@@ -755,221 +773,218 @@
 
 
         </div>
+    </div>
+
+    <div class="knowmore py-5 my-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <title class="tp d-flex justify-content-center mb-4 gray">想更瞭解我們嗎？</title>
+            <p class="p">您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>
+            </p>
+            <p class="p">，會有親切的客服人員回答您的問題，也可以透過社群網站隨時關注我們的動態。
+            </p>
 
 
-
-
-
-
-
-        <div class="knowmore my-5">
-            <div class="container d-flex flex-column justify-content-center align-items-center">
-                <title class="tp d-flex justify-content-center mb-4 gray">想更瞭解我們嗎？</title>
-                <p class="p d-flex">您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
-                </p>
-                <p class="p"> 也可以透過社群網站隨時關注我們的動態。</p>
-
-                <div class="picgroup mt-4">
-                    <i class="fab fab fab fa-facebook-f "></i>
-                    <i class="fab fab fa-twitter "></i>
-                </div>
+            <div class="picgroup mt-4">
+                <i class="fab fab fab fa-facebook-f "></i>
+                <i class="fab fab fa-twitter "></i>
             </div>
         </div>
+    </div>
 
-        <div class="footer w-100 mt-5 bg-light">
-            <div class="container-fluid m-0 p-0">
-                <div class="row m-0">
-                    <div class="col-12 col-md-4 p">
+    <div class="footer w-100 mt-5 bg-light py-4 px-5 ">
+        <div class="container-fluid m-0 p-0">
+            <div class="row m-0">
+                <div class="col-12 col-md-4 p">
 
-                        <div class="row">
-                            <div class="col-12 card-body border-info ">
+                    <div class="row">
+                        <div class="col-12 card-body border-info ">
 
-                                <div class="card-text">
-                                    <div class="navbar-brand-red ml-3">5x{
-                                        <i class="fab fas fa-gem fa-2x"></i>
-                                        .tw}
+                            <div class="card-text">
+                                <div class="navbar-brand-red ml-3">5x{
+                                    <i class="fab fas fa-gem fa-2x"></i>
+                                    .tw}
 
-                                    </div>
-
-                                    <ul class=" list-unstyled d-flex flex-column align-content-center p">
-                                        <li class="my-2">
-                                            <a href=" #"><i class="fab fas fa-phone-alt fa-1x"></i> 02-2331-5247</a>
-                                        </li>
-                                        <li class="my-2">
-                                            <a href=" #"><i class="fab fas fa-envelope fa-1x"></i> hi@5xruby.tw
-                                            </a>
-                                        </li>
-                                        <li class="my-2">
-                                            <a href=" #"><i class="fab fas fa-map-marker-alt fa-1x"></i>10046 台北市中正區衡陽路
-                                                7 號
-                                                5 樓</a>
-                                        </li>
-
-                                    </ul>
                                 </div>
+
+                                <ul class=" list-unstyled d-flex flex-column align-content-center p">
+                                    <li class="my-2">
+                                        <a href=" #"><i class="fab fas fa-phone-alt fa-1x"></i> 02-2331-5247</a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href=" #"><i class="fab fas fa-envelope fa-1x"></i> hi@5xruby.tw
+                                        </a>
+                                    </li>
+                                    <li class="my-2">
+                                        <a href=" #"><i class="fab fas fa-map-marker-alt fa-1x"></i>10046 台北市中正區衡陽路
+                                            7 號
+                                            5 樓</a>
+                                    </li>
+
+                                </ul>
                             </div>
-
-
-
-
-
-
                         </div>
 
 
 
+
+
+
                     </div>
-                    <div class="col-12 col-md-8 p ">
-
-                        <div class="row">
-                            <div class="col-6 col-md-2 card-body border-info ">
-                                <p class="card-title">我們的課程</p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                        <li>
-                                            <a href="#">ASTRO Camp</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">線上課程</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">全方位課程</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">短期課程</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-6 col-md-2 card-body border-info">
-                                <p class="card-title">服務項目</p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                        <li>
-                                            <a href="#">專案開發
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">企業代訓</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">空間租借
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-6 col-md-2 card-body border-info">
-                                <p class="card-title">關於我們
-
-                                </p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                        <li>
-                                            <a href="#">
-                                                媒體報導
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">團隊成員
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">專欄文章
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">最新消息</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-6 col-md-2 card-body border-info">
-                                <p class="card-title">聯絡我們
-                                </p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                        <li>
-                                            <a href="#">聯絡詢價
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">工作機會</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-6 col-md-2 card-body border-info">
-                                <p class="card-title">幫助與政策</p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                        <li>
-                                            <a href="#">常見問題</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">服務條款</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">隱私權政策</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-6 col-md-2 card-body border-info">
-                                <p class="card-title">追蹤</p>
-
-                                <div class="card-text">
-                                    <ul class="list-unstyled d-flex flex-column align-content-center p 
-                          ">
-                                        <li>
-                                            <i class="fab fa-facebook-square fa-contact-font fa-fw"></i><a href="#">
-                                                Facebook</a>
-                                        </li>
-                                        <li>
-                                            <i class="fab fa-github fa-contact-font fa-fw"></i><a href="#">
-                                                Github</a>
-                                        </li>
-                                        <li>
-                                            <i class="fab fa-line fa-contact-font fa-fw"></i><a href="#">Line@</a>
-                                        </li>
-                                        <li>
-                                            <i class="fab fa-twitter fa-contact-font fa-fw"></i><a href="#">twitter</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="col-12 border-copy border-top py-3 d-flex justify-content-center copy">
-                        <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
-                    </div>
-
 
 
 
                 </div>
+                <div class="col-12 col-md-8 p">
+
+                    <div class="row ">
+                        <div class="col-6 col-md-2 card-body border-info ">
+                            <p class="footer-card-title">我們的課程</p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <a href="#">ASTRO Camp</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">線上課程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">全方位課程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">短期課程</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-2 card-body border-info">
+                            <p class="footer-card-title">服務項目</p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <a href="#">專案開發
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">企業代訓</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">空間租借
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-2 card-body border-info">
+                            <p class="footer-card-title">關於我們
+
+                            </p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <a href="#">
+                                            關於我們
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            媒體報導
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">團隊成員
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">專欄文章
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">最新消息</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-2 card-body border-info">
+                            <p class="footer-card-title">聯絡我們
+                            </p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <a href="#">聯絡詢價
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">工作機會</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-2 card-body border-info">
+                            <p class="footer-card-title">幫助與政策</p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <a href="#">常見問題</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">服務條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">隱私權政策</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-2 card-body border-info">
+                            <p class="footer-card-title">追蹤</p>
+
+                            <div class="card-text">
+                                <ul class="list-unstyled d-flex flex-column align-content-center p">
+                                    <li>
+                                        <i class="fab fa-facebook-square fa-contact-font fa-fw"></i><a href="#">
+                                            Facebook</a>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-github fa-contact-font fa-fw"></i><a href="#">
+                                            Github</a>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-line fa-contact-font fa-fw"></i><a href="#">Line@</a>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-twitter fa-contact-font fa-fw"></i><a href="#">twitter</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 border-copy border-top pt-4 pb-0 d-flex justify-content-center copy">
+                    <p>© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+                </div>
+
 
 
 
@@ -979,23 +994,27 @@
 
         </div>
 
-        <buttom class=" pagebtn pic-service position-fixed">
-            <i class="fad fab fa-facebook-messenger "></i>
-
-        </buttom>
-
-        <div class="pagebtn up position-fixed"><i class="fad fas fa-angle-up "></i>
-        </div>
 
 
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+    <buttom class=" pagebtn pic-service position-fixed">
+        <i class="fad fab fa-facebook-messenger "></i>
+
+    </buttom>
+
+    <div class="pagebtn up position-fixed"><i class="fad fas fa-angle-up "></i>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
