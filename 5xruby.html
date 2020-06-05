@@ -38,10 +38,15 @@
         }
 
         .tp,
-        p.name {
+        p.name,
+        .sectitle {
             font-size: 23px;
             color: #555555;
         }
+
+
+
+
 
         .gray {
             color: #555555;
@@ -75,18 +80,16 @@
 
         }
 
+
+
+
+
         .badge-secondary {
             color: rgb(101, 100, 100);
             background-color: #dcdddee2;
         }
 
 
-
-
-        .footer>.p{
-            color: blue;
-            font-size: 12px;
-        }
 
 
 
@@ -178,12 +181,7 @@
             margin: 0 10px;
         }
 
-        .picgroup {
-            display: flex;
-            justify-content: center;
 
-
-        }
 
         .footer {
             background-color: #eee;
@@ -196,7 +194,7 @@
             text-decoration: none;
 
             line-height: 1.8em;
-     
+
 
 
             font-size: 15px;
@@ -204,7 +202,8 @@
 
         }
 
-        .footer-card-title{
+
+        .footer-card-title {
             font-size: 15px;
             color: rgb(75, 75, 78);
         }
@@ -224,10 +223,11 @@
         /* 公司地址區 icon圖片 */
 
         .footer li a .fab {
-            font-size: 20px;
+            font-size: 18px;
             color: #888888;
-            width: 30px;
+            width: 20px;
             text-align: center;
+
         }
 
         /* footer 超連結摸到 */
@@ -240,7 +240,7 @@
             color: rgb(156, 206, 19)
         }
 
-        a.nav-item:hover{
+        a.nav-item:hover {
             color: #d90845 !important;
         }
 
@@ -276,8 +276,20 @@
 
         .bg-eee {
             /* background-color: rgb(204, 202, 202); */
-            /* background-color: #8a8787; */
+            /* backgroupnd-color: #8a8787; */
             /* background-color: #e9e6e6d9; */
+        }
+
+        .sectitle {
+            height: 70px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .sectitle {
+                height: 100px;
+                /* background-color: salmon; */
+            }
+
         }
     </style>
 </head>
@@ -300,7 +312,7 @@
         <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
             <div class="navbar-nav justify-content-end p">
                 <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
-                <a class="nav-item nav-link" href="#"><i class="fab fab far fa-gem"></i> 線上課程</a>
+                <a class="nav-item nav-link" href="imcodingp.html"><i class="fab fab far fa-gem"></i> 線上課程</a>
                 <a class="nav-item nav-link" href="#"><i class="fab far fa-compass"></i> ASTRO Camp</a>
                 <a class="nav-item nav-link" href="#"><i class="fab fas fa-bolt"></i> 全方位課程</a>
                 <a class="nav-item nav-link" href="#">短期課程</a>
@@ -354,59 +366,53 @@
 
 
     <div class="cardsec ">
-        <div class="container-fluid bg-light">
-            <div class="row text-center">
-                <div class="col-12 my-5 position-relative px-5">
-                    <div class="chapter tp d-flex justify-content-center">關於五倍紅寶石 About 5xRuby
-                        <div />
-                    </div>
-                </div>
-                <div class="row no-wrap px-5">
-                    <div class="col-12 col-md-3 px-2 d-flex flex-column justify-content-center">
-                        <div class="pic mx-auto my-5">
-                            <img src="feature-1.png" alt="" class="">
-                        </div>
-                        <p class="h6 text-center">網頁設計<br>前後端課程教學</p>
-                        <p class="px-2 h-100">帶你掌握從入門到進階讓你快速上手，學員好評推薦轉職課程</p>
-                    </div>
-                    <div class="col-12 col-md-3 px-2 d-flex flex-column justify-content-center">
-                        <div class="pic mx-auto my-5">
-                            <img src="feature-2.png" alt="" class="">
-                        </div>
-                        <p class="h6 text-center">頂尖技術
-                            <br>網頁製作、專案開發</p>
-                        <p class="px-2">網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。</p>
-                    </div>
-                    <div class="col-12 col-md-3 px-2 d-flex flex-column justify-content-center">
-                        <div class="pic mx-auto my-5">
-                            <img src="feature-3.png" alt="" class="">
-                        </div>
-                        <p class="h6 text-center">資訊軟體開發
-                            <br>技術顧問</p>
-                        <p class="px-2">協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！</p>
-                    </div>
-                    <div class="col-12 col-md-3 px-2 d-flex flex-column justify-content-center">
-                        <div class="pic mx-auto my-5">
-                            <img src="feature-4.png" alt="" class="">
-                        </div>
-                        <p class="h6 text-center">前後端工程師
-                            <br>社群經營</p>
-                        <p class="px-2">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
+        <div class="container text-center position-relative my-5 px-5">
+            <p class="chapter tp d-flex justify-content-center my-5 ">關於五倍紅寶石 About 5xRuby</p>
         </div>
 
 
-
+        <div class="container">
+            <div class="row no-wrap px-md-5 md-1">
+                <div class="col-12 col-md-3 px-2 d-flex flex-column">
+                    <div class="pic mx-auto my-5">
+                        <img src="feature-1.png">
+                    </div>
+                    <div class="sectitle text-center">網頁設計<br>前後端課程教學</div>
+                    <div class="px-2 px-md-3 sectxt text-center">帶你掌握程式技能轉職工程師從入門到進階讓你快速上手，學員好評推薦轉職課程</div>
+                </div>
+                <div class="col-12 col-md-3 px-2 d-flex flex-column">
+                    <div class="pic mx-auto my-5">
+                        <img src="feature-2.png">
+                    </div>
+                    <div class="sectitle text-center">頂尖技術<br>
+                        網頁製作、專案開發</div>
+                    <div class="px-2 px-md-3 sectxt text-center">網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。</div>
+                </div>
+                <div class="col-12 col-md-3 px-2 d-flex flex-column">
+                    <div class="pic mx-auto my-5">
+                        <img src="feature-3.png">
+                    </div>
+                    <div class="sectitle text-center">資訊軟體開發<br>
+                        技術顧問</div>
+                    <div class="px-2 px-md-3 sectxt text-center">協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！</div>
+                </div>
+                <div class="col-12 col-md-3 px-2 d-flex flex-column">
+                    <div class="pic mx-auto my-5">
+                        <img src="feature-4.png">
+                    </div>
+                    <div class="sectitle text-center">前後端工程師<br>
+                        社群經營</div>
+                    <div class="px-2 px-md-3 sectxt text-center">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
 
 
 
@@ -468,6 +474,12 @@
             padding: 10px 10px;
         }
 
+        .openbadge {
+            font-size: 12px;
+            border-radius: 3px;
+            padding: 5px 5px;
+        }
+
         .cardp,
         p.job {
             color: rgba(101, 100, 100, 0.728);
@@ -488,9 +500,9 @@
 
                     <div class="card h-100">
                         <img src="class-1.jpg" class="card-to-top w-100">
-                        <div class="card-body">
+                        <div class="card-body pt-2">
                             <h5>
-                                <span class="badge badge-danger p">開放報名中</span>
+                                <span class="openbadge badge-danger p">開放報名中</span>
                             </h5>
                             <span class="card-title ">網頁前端設計女性專班 - 假日班</span>
                         </div>
@@ -530,9 +542,9 @@
 
                     <div class="card h-100">
                         <img src="class-2.jpg" class="card-to-top w-100">
-                        <div class="card-body">
+                        <div class="card-body pt-2">
                             <h5>
-                                <span class="badge badge-danger p">開放報名中</span>
+                                <span class="openbadge badge-danger p">開放報名中</span>
                             </h5>
                             <span class="card-title">Vue.js 與 Vuex 前端開發實戰課程 - 假日班</span>
 
@@ -571,9 +583,9 @@
 
                     <div class="card h-100">
                         <img src="class-3.jpg" class="card-to-top w-100">
-                        <div class="card-body">
+                        <div class="card-body pt-2">
                             <h5>
-                                <span class="badge badge-danger p">開放報名中</span>
+                                <span class="openbadge badge-danger p">開放報名中</span>
                             </h5>
                             <span class="card-title">HTML 網頁設計新手村 - 假日班</span>
 
@@ -662,7 +674,7 @@
     <div class="classmate bg-light pt-4">
 
         <div class="container text-center position-relative ">
-            <p class="chapter tp d-flex justify-content-center my-5  ">網頁課程推薦</p>
+            <p class="chapter tp d-flex justify-content-center mt-5 mb-2  ">網頁課程推薦</p>
         </div>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -784,9 +796,9 @@
             </p>
 
 
-            <div class="picgroup mt-4">
-                <i class="fab fab fab fa-facebook-f "></i>
-                <i class="fab fab fa-twitter "></i>
+            <div class="picgroup d-flex justify-content-center ">
+                <i class="fab fab fab fa-facebook-f mr-4"></i>
+                <i class="fab fab fa-twitter ml-4"></i>
             </div>
         </div>
     </div>
@@ -807,14 +819,14 @@
                                 </div>
 
                                 <ul class=" list-unstyled d-flex flex-column align-content-center p">
-                                    <li class="my-2">
+                                    <li class="mt-3">
                                         <a href=" #"><i class="fab fas fa-phone-alt fa-1x"></i> 02-2331-5247</a>
                                     </li>
-                                    <li class="my-2">
+                                    <li class="mt-1">
                                         <a href=" #"><i class="fab fas fa-envelope fa-1x"></i> hi@5xruby.tw
                                         </a>
                                     </li>
-                                    <li class="my-2">
+                                    <li class="mt-1">
                                         <a href=" #"><i class="fab fas fa-map-marker-alt fa-1x"></i>10046 台北市中正區衡陽路
                                             7 號
                                             5 樓</a>
@@ -955,18 +967,18 @@
 
                             <div class="card-text">
                                 <ul class="list-unstyled d-flex flex-column align-content-center p">
-                                    <li>
+                                    <li class="row d-nowrap">
                                         <i class="fab fa-facebook-square fa-contact-font fa-fw"></i><a href="#">
                                             Facebook</a>
                                     </li>
-                                    <li>
+                                    <li class="row d-nowrap">
                                         <i class="fab fa-github fa-contact-font fa-fw"></i><a href="#">
                                             Github</a>
                                     </li>
-                                    <li>
+                                    <li class="row d-nowrap">
                                         <i class="fab fa-line fa-contact-font fa-fw"></i><a href="#">Line@</a>
                                     </li>
-                                    <li>
+                                    <li class="row d-nowrap">
                                         <i class="fab fa-twitter fa-contact-font fa-fw"></i><a href="#">twitter</a>
                                     </li>
 
