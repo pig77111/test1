@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 
     <title class="tp d-flex justify-content-center ">Hello, world!</title>
@@ -22,6 +23,13 @@
         body {
             position: relative;
         }
+        .bg-gray{
+            background-color: #dcdddee2;
+        }
+        .bg-red{
+            background-color:#d90845;
+            color: #ffffff; 
+        }
 
         .navbar-brand-red {
             /* font-size: 16px; */
@@ -32,7 +40,7 @@
         }
 
         button>.navbar-toggler {
-            color: #fff !important;
+            color: #fff;
 
         }
 
@@ -228,13 +236,18 @@
         } */
 
 
+        .navbar>button:focus {
+            outline: 0px;
+            /* border:none; */
+
+        }
 
         /* 公司地址區 icon圖片 */
 
         .footer li a .fab {
             font-size: 18px;
             color: #888888;
-            width: 20px;
+            width: 30px;
             text-align: center;
 
         }
@@ -306,7 +319,7 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white pr-0 py-0 sticky-top  ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 sticky-top  ">
 
         <div class="navbar-brand-red ml-3 pb-0 my-0">5x{
             <i class="fab fas fa-gem fa-2x"></i>
@@ -321,7 +334,7 @@
         </button>
 
 
-        <div class="collapse navbar-collapse  justify-content-lg-end  border-top  border-secondary border-md-0 m-0"
+        <div class="collapse navbar-collapse py-3 justify-content-lg-end  border-top  border-md-0 m-0"
             id="navbarNavAltMarkup">
             <div class="navbar-nav pt-2 p">
                 <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
@@ -429,7 +442,7 @@
 
 
 
-
+    i
 
 
     <style>
@@ -447,7 +460,7 @@
         .navbar {
             /* 陰影 */
 
-            box-shadow: 0px 3px 5px 1px #bfa4a4b6;
+            box-shadow: 0px 3px 3px 1px #dfc6c63f;
         }
 
 
@@ -802,9 +815,9 @@
     <div class="knowmore py-5 my-5">
         <div class="container d-flex flex-column justify-content-center align-items-center">
             <title class="tp d-flex justify-content-center mb-4 gray">想更瞭解我們嗎？</title>
-            <p class="p">您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>
+            <p class="p mb-0">您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
             </p>
-            <p class="p">，會有親切的客服人員回答您的問題，也可以透過社群網站隨時關注我們的動態。
+            <p class="p text-center">也可以透過社群網站隨時關注我們的動態。
             </p>
 
 
@@ -1022,12 +1035,139 @@
 
     </div>
 
+
+    <style>
+        .messenger {
+            background-color:rgba(245, 245, 245, 0.913);
+            width: 360px;
+            height: 180px;
+            border-radius: 10px!important;
+
+            right: 30px;
+            bottom: 170px;
+            font-size: 8px;
+            z-index: 12;
+            box-shadow: 1px 1px 8px 0px rgba(128, 128, 128,.6);
+
+
+        }
+
+        .down{
+            border-radius: 10px!important;
+        }
+        .messenger a{
+            font-size: 12px;
+            text-decoration: underline;
+        }
+
+        .messenger button{
+            border-radius: 10px;
+        }
+
+
+
+        .fa-window-close {
+            font-size: 25px;
+
+            /* text-align: center; */
+            /* border-radius: 50%; */
+
+            top: 15px;
+            right: 15px;
+
+
+        }
+
+        .fa-headset {
+            /* width: 20px; */
+            /* height: 20px; */
+            /* border-radius: 50%; */
+        }
+
+        .fa-headset::before {
+            text-align: center;
+            width: 100%;
+            margin-left: 20px;
+            /* padding: 0 20px; */
+
+
+        }
+
+        .discount {
+            background-color: #dcdddee2!important;
+            /* background-color: #ccc ; */
+        }
+        .discount{
+            font-size: 14px;
+        }
+
+        button.btn{
+            font-size: 16px;
+        }
+        .close-btn{
+            right: 10px;
+            top: 10px;
+            /* font-size: 20px; */
+        }
+        .messenger.fbbutton:focus .fbbutton{
+            display: none;
+
+        }
+
+        .messenger a.close-btn:focus .messenger{
+            /* display: none; */
+            /* opacity: 0; */
+
+        }
+        .pagebtn:hover .massenger{
+            /* color: aqua; */
+            /* opacity: 0; */
+            /* display: none; */
+
+
+        }
+        
+    </style>
+
     <buttom class=" pagebtn pic-service position-fixed">
         <i class="fad fab fa-facebook-messenger "></i>
 
     </buttom>
 
     <div class="pagebtn up position-fixed"><i class="fad fas fa-angle-up "></i>
+    </div>
+
+    <div class="messenger bg-light position-fixed rounded-lg ">
+        <a href="#" class="close-btn position-absolute">
+            <i class="fad fas fa-window-close"></i>
+        </a>
+        
+        <div class="row m-0 px-2 py-2 position-relative">
+            <div class="mestitle pt-2 pb-1 gray px-5 ">
+                五倍紅寶石 專業程式教育機構，平均回覆時間：立即 </div>
+            <div class="row  d-flex justify-content-center align-items-center ">
+                <i class="fas fa-headset fa-2x m-0  pr-2 px-2"></i>
+                <div class="discount badge badge-pill px-4 bg-gray py-2 pt-2">領取折扣碼優惠請點我：）</div>
+            </div>
+           
+        </div>
+
+        <div class="down bg-white d-flex flex-column  h-50 m-auto  rounded-bottom d-flex ">
+            <div class=" d-flex flex-column m-auto my-2">
+                <button type="fbbutton" class="btn bg-red px-5 d-flex align-items-center mt-3 p-2 w-100">
+                    <i
+                        class="fab fa-facebook-messenger fa-2x pr-1"></i>用MONICA身分繼續
+                </button>
+            </div>
+            <div class="d-flex justify-content-center m-auto">
+                <a href="#" class="text-center gray m-0 text-muted mb-2 ">不是你本人嗎？請登入Messenger</a>
+            </div>
+        </div>
+        
+
+
+
+
     </div>
 
 

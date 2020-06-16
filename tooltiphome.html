@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .bs-tooltip-top .arrow::before,
+        .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+
+            border-top-color: rgb(236, 177, 13);
+        }
+
+        .tooltip-inner {
+
+            background-color: rgb(236, 177, 13);
+            border-radius: 0;
+        }
+
+        .tooltip.show {
+            opacity: 1;
+        }
+
+        .bs-tooltip-top,
+        .bs-tooltip-auto[x-placement^="top"] {
+            padding: 0.4rem 0;
+        }
+    </style>
+
+    <!-- 說明文字寫在這,<a href='http://google.com' target='_blank'>要看更多點此處</a> -->
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 m-auto">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At autem aut quis odio, possimus eveniet,
+                    maxime repellendus nihil sed veniam consectetur corporis, aliquid vitae repudiandae qui officia?
+                    Possimus, <span data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>
+                        ">dolorum
+                        veniam?</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip(
+                {
+                    html: true,
+                    trigger:'click'
+                }
+
+            )
+        })
+
+    </script>
+</body>
+
+</html>
