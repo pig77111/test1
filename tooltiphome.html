@@ -43,11 +43,18 @@
     <div class="container">
         <div class="row">
             <div class="col-3 m-auto">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At autem aut quis odio, possimus eveniet,
+                <><span data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">Lorem ipsum</span> <span data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">dolor</span>, <sapn data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">
+                    sit amet
+                </sapn> consectetur adipisicing elit. At autem aut quis odio, possimus eveniet,
                     maxime repellendus nihil sed veniam consectetur corporis, aliquid vitae repudiandae qui officia?
-                    Possimus, <span data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>
-                        ">dolorum
-                        veniam?</span></p>
+                    Possimus, 
+<span data-toggle="tooltip" data-placement="top" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">文字</span>
+
+<span data-toggle="tooltip" data-placement="bottom" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">文字</span>
+
+<span data-toggle="tooltip" data-placement="left" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">文字</span>
+<span data-toggle="tooltip" data-placement="right" title="說明文字寫在這<a href='http://google.com' target='_blank'>要看更多點此處</a>">文字</span>
+
             </div>
         </div>
     </div>
@@ -58,18 +65,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip(
-                {
-                    html: true,
-                    trigger:'click'
-                }
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip(
+            {
+                html: true,
+                // trigger:'click'
+                delay: { "show": 500, "hide": 100 }
+            }
 
-            )
-        })
+        )
+    })
+</script>
 
-    </script>
 </body>
 
 </html>
