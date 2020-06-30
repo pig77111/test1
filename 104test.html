@@ -14,17 +14,19 @@
   <title>Hello, world!</title>
 </head>
 
-<body>
-  <div class="top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-light fixed-top border-top border-info ">
-      <a class="navbar-brand text-white" href="#">104人力銀行</a>
+<body style="font-size: 16px;">
+  <div class="top" style="font-size:15px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark text-light fixed-top border-top border-info p-0 mb-0">
+      <a class="navbar-brand text-white ml-3 p-0" href="#"><p class=" pt-0 mb-0">
+        104人力銀行
+      </p></a>
       <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse m-0" style="font-size:12px;" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto ">
           <li class="nav-item text-white active">
             <a class="nav-link text-white" href="#">
@@ -33,16 +35,16 @@
               <span class="sr-only">(current)</span></a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">My104</a>
+          <li class="nav-item" >
+            <a class="nav-link text-white" href="#"><p class="text-reset  text-weight-bold">
+              My104
+            </p></a>
 
 
           </li>
 
           <li class="nav-item">
             <a href="#" class="nav-link text-white">家教</a>
-
-
           </li>
 
           <li class="nav-item dropdown">
@@ -50,7 +52,7 @@
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               更多
             </a>
-            <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu text-dark text-reset text-white text-weight-bold" aria-labelledby="navbarDropdown">
               <a class="dropdown-item text-dark" href="#">高年級公司評論</a>
               <a class="dropdown-item text-dark" href="#">銀髮銀行</a>
               <a class="dropdown-item text-dark" href="#">新創企業</a>
@@ -64,7 +66,7 @@
               <a class="dropdown-item text-dark" href="#">全部 》</a>
 
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#"></a>
             </div>
 
 
@@ -122,20 +124,26 @@
 
 
           <li class="nav-item">
-            <a href="#" class="nav-link text-white">註冊</a>
+            <a href="#" class="nav-link text-white"><p class="text-reset text-weight-bold">
+              註冊
+            </p></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-white">登入</a>
+            <a href="#" class="nav-link text-white"><p class="text-reset text-weight-bold">
+              登入
+            </p></a>
           </li>
         </ul>
 
       </div>
     </nav>
 
-    <div class="container ">
+
+
+    <div class="container mt-3">
       <div class="row  d-flex flex-column">
         <div class="picitem m-auto mt-5 pt-5">
-          <img src="https://picsum.photos/1000/70/?random=1" class="w-100">
+          <img src="topad.png" class="w-100">
         </div>
         <div class="container px-5">
           <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -166,55 +174,120 @@
 
   </div>
 
-  <div class="search">
+  <!-- search bg -->
+
+  <style>
+    .search {
+
+
+      background-color: rgba(250, 186, 66, 0.21);
+      /* margin-right: 700px; */
+    }
+
+    .search img {
+      left: -200px;
+      top: 50%;
+    }
+  </style>
+
+  <div class="search position-relative">
+    <img src="search_man.png" alt="" class="pl-5 position-absolute">
     <div class="container py-5 pl-5">
-      <div class="form-row pl-5 ">
-        <div class="pl-5 col-6">
+
+      <div class="form-row pl-5 mt-2 mb-1 no-gutter">
+        <div class=" col-6">
           <input type="text" class="form-control" placeholder="搜尋">
         </div>
-        <div class="col-2"><input type="text" class="form-control" placeholder="地區"></div>
-        <div class="col-2"><input type="text" class="form-control" placeholder="職務類別"></div>
+
+        <div class="col-2 no-gutter">
+          <div class="form-group">
+
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>地區</option>
+              <option>台灣</option>
+              <option>大陸</option>
+              <option>歐洲</option>
+              <option>東南亞</option>
+              <option>大洋洲</option>
+              <option>中東</option>
+              <option>印度</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-2 no-gutter">
+          <div class="form-group">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>職業類別</option>
+              <option>士</option>
+              <option>農</option>
+              <option>工</option>
+              <option>商</option>
+            </select>
+          </div>
+        </div>
         <div class="col-2 "><button type="submit" class="btn btn-primary">Sign in</button></div>
 
       </div>
 
-      <div class="row m-5">
-        <div class="col-9 ">
-          <div class="p-2">
-            <a href="#">外商專區</a>
-            <a href="#">歡迎新鮮人</a>
-            <a href="#">無經驗可</a>
-            <a href="#">時薪180元起</a>
-            <a href="#">學生實習</a>
-            <a href="#">行政</a>
-            <a href="#">英文</a>
-            <a href="#">短期</a>
-            <a href="#">月薪4萬元起</a>
-            <a href="#">國外業務</a>
+      <div class="row align-items-center " style="font-size: 12px;">
+        <div class="col-9 d-flex flex-column align-items-center">
+          <div class="pl-2 pt-2">
+            <a class="text-secondary ml-2" href="#">外商專區</a>
+            <a class="text-secondary ml-2" href="#">歡迎新鮮人</a>
+            <a class="text-secondary ml-2" href="#">無經驗可</a>
+            <a class="text-secondary ml-2" href="#">時薪180元起</a>
+            <a class="text-secondary ml-2" href="#">學生實習</a>
+            <a class="text-secondary ml-2" href="#">行政</a>
+            <a class="text-secondary ml-2" href="#">英文</a>
+            <a class="text-secondary ml-2" href="#">短期</a>
+            <a class="text-secondary ml-2" href="#">月薪4萬元起</a>
+            <a class="text-secondary ml-2" href="#">國外業務</a>
           </div>
-          <div class="p-2">
+          <div class="pl-2 pt-2">
 
-            <a href="＃">中高齡</a>
-            <a href="＃">上市上櫃</a>
-            <a href="＃">高薪精選企業</a>
-            <a href="＃">暑期打工</a>
-            <a href="＃">打工兼職</a>
-            <a href="＃">日文</a>
-            <a href="＃">科技園區</a>
-            <a href="＃">工程師</a>
-            <a href="＃">接受身心障礙</a>
-            <a href="＃">最新工作</a>
+            <a class="text-secondary ml-2" href="＃">中高齡</a>
+            <a class="text-secondary ml-2" href="＃">上市上櫃</a>
+            <a class="text-secondary ml-2" href="＃">高薪精選企業</a>
+            <a class="text-secondary ml-2" href="＃">暑期打工</a>
+            <a class="text-secondary ml-2" href="＃">打工兼職</a>
+            <a class="text-secondary ml-2" href="＃">日文</a>
+            <a class="text-secondary ml-2" href="＃">科技園區</a>
+            <a class="text-secondary ml-2" href="＃">工程師</a>
+            <a class="text-secondary ml-2" href="＃">接受身心障礙</a>
+            <a class="text-secondary ml-2" href="＃">最新工作</a>
           </div>
 
-          <div class="p-2">
-            <a href="#">找公司</a>|
-            <a href="#">職涯診所</a>|
-            <a href="#">新鮮人求職懶人包</a>|
-            <a href="#">公司評論</a>|
-            <a href="#">白皮書</a>|
-            <a href="#">企業品牌大賞</a>|
-            <a href="#">薪資情報</a>|
-            <a href="#">職務大百科</a>|
+          <div class="row pl-2 pt-2">
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">找公司</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">職涯診所</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">新鮮人求職懶人包</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">公司評論</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">白皮書</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">企業品牌大賞</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">薪資情報</a>
+            <p>
+              |
+            </p>
+            <a class="text-reset text-secondary ml-2 pr-2 text-weight-light" href="#">職務大百科</a>
 
           </div>
 
@@ -223,9 +296,9 @@
           <div class=" m-auto p-2">
             <div class="d-block">
 
-              <div class="py-1"><a href="#">履歷診療室</a></div>
-              <div class="py-1"><a href="#">職務找工作</a></div>
-              <div class="py-1"><a href="#">地圖找工作</a></div>
+              <div class="py-1"><a class="text-reset text-secondary" href="#">履歷診療室</a></div>
+              <div class="py-1"><a class="text-reset text-secondary" href="#">職務找工作</a></div>
+              <div class="py-1"><a class="text-reset text-secondary" href="#">地圖找工作</a></div>
 
             </div>
           </div>
@@ -237,76 +310,120 @@
 
   </div>
 
-  <div class="rowcarousal">
-    <div class="container">
-      <div class="row bg-info">
-        <div class="col-8">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active bg-success">
-                <div class="d-flex">
-                  <div class="embed-responsive embed-responsive-4by3 ">
-                    <iframe width="300" height="300" src="https://www.youtube.com/embed/eBDyN_GYhWw" frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-8">
+
+        <div id="carouselleft" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselleft" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselleft" data-slide-to="1"></li>
+            <li data-target="#carouselleft" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner mb-0 pb-0">
+            <div class="carousel-item bg-warning p-0 m-auto active">
+              <div class="card mb-3" style="max-width: 700px;">
+                <div class="row no-gutters">
+                  <div class="col-md-5 h-100">
+                    <img src="yt1.jpg" class="d-block w-100 h-75">
                   </div>
-                  <div class="text">
-                    詳細內容採取規律本頁，斗內我還比例，不對不可孤獨重視今後兩個日韓法國涉及，計劃今天手機競爭印刷不但特性插入，來了民國依舊會不會剛才而言整合轉變最高我說，明年前後協會版本所說性質以上是否直到想要速度接下來是什麼，幫你感動採用目光，探索不但宣傳處理，夥伴看見。
+                  <div class="col-md-7">
+                    <div class="p-0 m-0">
+                      <a class="card-title" href="#">客戶動不動就發飆！新鮮人該學的逆轉情勢說話技巧
+                      </a>
+                      <p class="card-text">30年公關經驗職場前輩分享光鮮亮麗的背後，更重要的專業是如何面對和處理客戶情緒的眉角?
+
+                      <ul class="text-secondary pt-2 border-top">
+                        <li>面試時遇到不會的問題該如何回答?</li>
+                        <li>【履歷焦點】職務前輩任選，免費履歷健診>>></li>
+                      </ul>
+                      </p>
+                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
                   </div>
                 </div>
-
               </div>
-              <div class="carousel-item">
-                <div class="d-flex m-auto">
-                  <div class="embed-responsive embed-responsive-4by3 ">
-                    <iframe width="300" height="300" src="https://www.youtube.com/embed/eBDyN_GYhWw" frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
-                  </div>
-                  <div class="text">
-                    詳細內容採取規律本頁，斗內我還比例，不對不可孤獨重視今後兩個日韓法國涉及，計劃今天手機競爭印刷不但特性插入，來了民國依舊會不會剛才而言整合轉變最高我說，明年前後協會版本所說性質以上是否直到想要速度接下來是什麼，幫你感動採用目光，探索不但宣傳處理，夥伴看見。
-                  </div>
-                </div>
 
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex ">
-                  <div class="embed-responsive embed-responsive-4by3 ">
-                    <iframe width="300" height="300" src="https://www.youtube.com/embed/8bW4nNSMWuk" frameborder="0"
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item bg-warning">
+              <div class="card mb-3" style="max-width: 700px;">
+                <div class="row no-gutters">
+                  <div class="col-md-5 h-100">
+                    <img src="yt1.jpg" class="d-block w-100 h-75">
                   </div>
-                  <div class="text">
-                    詳細內容採取規律本頁，斗內我還比例，不對不可孤獨重視今後兩個日韓法國涉及，計劃今天手機競爭印刷不但特性插入，來了民國依舊會不會剛才而言整合轉變最高我說，明年前後協會版本所說性質以上是否直到想要速度接下來是什麼，幫你感動採用目光，探索不但宣傳處理，夥伴看見。
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <a class="card-title" href="#">客戶動不動就發飆！新鮮人該學的逆轉情勢說話技巧
+                      </a>
+                      <p class="card-text">30年公關經驗職場前輩分享光鮮亮麗的背後，更重要的專業是如何面對和處理客戶情緒的眉角?
+
+                      <ul class="text-secondary pt-2 border-top">
+                        <li>面試時遇到不會的問題該如何回答?</li>
+                        <li>【履歷焦點】職務前輩任選，免費履歷健診>>></li>
+                      </ul>
+                      </p>
+                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item bg-warning">
+              <div class="card mb-3" style="max-width: 700px;">
+                <div class="row no-gutters">
+                  <div class="col-md-5 h-100">
+                    <img src="yt1.jpg" class="d-block w-100 h-75">
+                  </div>
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      <a class="card-title" href="#">客戶動不動就發飆！新鮮人該學的逆轉情勢說話技巧
+                      </a>
+                      <p class="card-text">30年公關經驗職場前輩分享光鮮亮麗的背後，更重要的專業是如何面對和處理客戶情緒的眉角?
+
+                      <ul class="text-secondary pt-2 border-top">
+                        <li>面試時遇到不會的問題該如何回答?</li>
+                        <li>【履歷焦點】職務前輩任選，免費履歷健診>>></li>
+                      </ul>
+                      </p>
+                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <a class="carousel-control-prev bg-info" href="#carouselleft" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next bg-info" href="#carouselleft" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="col-4">
-          <img src="embadpic.gif" class="w-100 h-100">
-        </div>
+      </div>
+
+      <div class="col-3 bg-info w-100 h-100">
+
+        <img src="embadpic.gif" class="h-100">
+
 
       </div>
 
 
     </div>
-
   </div>
+
+
+
+
+
+
+
+
+
+
 
   <div class="choice">
     <div class="container">
@@ -372,50 +489,71 @@
       <p>最強主打</p>
       <div class="row">
         <div class="col-3">
-          <div class="card">
-            <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+          <div class="card h-100">
+            <img src="c1.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <p class="card-title">質感生活X美好職涯
+              </p>
+              <p class="card-text text-secondary">透過門市OJT教導學習店內事務，每季參加學習測驗，通過即調薪！快來加入，一起分享在MUJI工作的點滴
+
+              </p>
+              <div class="card-text bg-info"><span class="bg-warning rounded  p-1 text-light">徵</span><a href="#">安全衛生管理
+                  內場兼職人員</a></div>
             </div>
           </div>
         </div>
         <div class="col-3">
-          <div class="card">
-            <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+          <div class="card h-100">
+            <img src="c2.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <p class="card-title">致伸科技：熱烈號召研發菁英
+
+              </p>
+              <p class="card-text text-secondary">與時俱進的工作模式、敏捷的組織設計。致伸科技讓你站上世界舞台，與趨勢接軌，實現自我！
+
+
+
+              </p>
+              <div class="card-text bg-info"><span class="bg-warning rounded  p-1 text-light">徵</span><a href="#">內科研發職缺
+                  年薪14個月</a></div>
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card">
-            <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+        <div class="col-3 ">
+          <div class="card h-100">
+            <img src="c3.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <p class="card-title">【新鮮人線上徵才博覽會】
+
+
+              </p>
+              <p class="card-text text-secondary">新鮮人看過來！為你提供找工作的最快捷徑→集結多產業與熱門企業，搶鮮好職都在這！好缺不等人，立即卡位！
+
+              </p>
+              <div class="card-text bg-info"><span class="bg-warning rounded  p-1 text-light">徵</span><a href="#">
+                  多產業不限科系
+                  熱門企業與職缺</a></div>
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card">
-            <img src="https://picsum.photos/300/200/?random=1" class="card-img-top">
+        <div class="col-3 ">
+          <div class="card h-100">
+            <img src="c4.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <p class="card-title">軒昂Xuenn新生代計畫！
+
+
+              </p>
+              <p class="card-text text-sm text-secondary">數位遊戲業界先驅、公司文化自由。軒昂Xuenn強力募集軟體工程師！歡迎追求卓越的您一同加入！
+
+
+              </p>
+              <div class="card-text bg-info"><span class="bg-warning rounded  p-1 text-light">徵</span><a href="#">優於業界薪酬
+                  遊戲業首選</a></div>
             </div>
           </div>
         </div>
@@ -433,57 +571,186 @@
   </div>
 
   <style>
-    .toptext{
-      top:0;
-      left: 0;
+    .toptext {
+      top: 40%;
+      left: 8%;
     }
   </style>
 
   <div class="boxs">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
+    <div class="container m-auto">
+      <div class="row ">
+        <div class="col-6 no-gutter mt-5 mb-5">
 
           <img src="brandpic.jpg" class=" position-relative">
-          <div class="toptext position-absolute">
+          <div class="toptext position-absolute" style="font-size: 16px;">
             <div><a href="#">【月薪上看150K】</a></div>
             <div><a href="#">月薪35~150K</a></div>
             <div><a href="#">高抽成無上限業績獎金！</a></div>
             <div><a href="#">加入台灣規模最大通訊連鎖門市</a></div>
             <div><a href="#">為自己開創「薪」事業→</a></div>
             <div><a href="#">全台強力募集‧電信相關業</a></div>
-            <div><button type="submit" class="btn btn-light">更多職缺</button></div>
-            <div><p class="text-center"> ctlorem10</p></div>
+            <div><button type="submit" class="btn btn-outline-warning">更多職缺</button></div>
+            <div>
+              <p class="text-center text-secondary"> 全台熱力募集‧傳遞快樂的工作</p>
+            </div>
 
-            <div class="col-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sequi est. Iure numquam dolore laudantium
-              architecto eligendi iusto harum voluptatum tempore dolorem doloremque ipsam eum ad veritatis, doloribus
-              rerum ex.
-            </div>
-            <div class="col-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sequi est. Iure numquam dolore laudantium
-              architecto eligendi iusto harum voluptatum tempore dolorem doloremque ipsam eum ad veritatis, doloribus
-              rerum ex.
-            </div>
+
 
 
           </div>
-          <div class="row no-gutter bg-secondary py-2">
-            <div class="col-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sequi est. Iure numquam dolore laudantium
-              architecto eligendi iusto harum voluptatum tempore dolorem doloremque ipsam eum ad veritatis, doloribus
-              rerum ex.
-            </div>
-            <div class="col-6">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, sequi est. Iure numquam dolore laudantium
-              architecto eligendi iusto harum voluptatum tempore dolorem doloremque ipsam eum ad veritatis, doloribus
-              rerum ex.
-            </div>
 
-
-          </div>
 
         </div>
+        <div class="col-3 no-gutter my-auto" style="font-size:13px;">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseLeft" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="title">
+                      【美容師】月薪上看80K
+
+                    </div>
+                    <p>佐登妮絲美容上市集團－全台美容師、醫美人員招募中！無經驗可！</p>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseLeft" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+
+                  <ul>
+
+
+                    <li>佐登妮絲美容上市集團</li>
+                    <li>全台【美容師、醫美人員】招募</li>
+                    <li>無經驗可不限科系，供教育訓練</li>
+                    <li>海外發展機會、各項獎金、紅利</li>
+                  </ul>
+                  <div class="text-right ">
+                    <a class="text-decoration-none" href="#">更多職缺</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="title ">
+                      【店長候補】38K起薪
+                    </div>
+                    <p>
+                      我們是溫暖的工作團隊，擁有共同目標，邀請你一起朝夢想前進！
+                    </p>
+
+                  </button>
+
+
+                </h5>
+
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+
+
+                  <ul>
+                    <li>無經驗可，歡迎新鮮人</li>
+                    <li>實現夢想，擁抱管理者未來</li>
+                    <li>制度完善，考核通過即加薪</li>
+                    <li>溫暖團隊，月休8日以上</li>
+                  </ul>
+                  <div class="text-right ">
+                    <a class="text-decoration-none" href="#">更多職缺</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-3 no-gutter my-auto" style="font-size:13px;">
+          <div class="accordion" id="accordionExample2">
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="title">
+                      【美容師】月薪上看80K
+
+                    </div>
+                    <p>佐登妮絲美容上市集團－全台美容師、醫美人員招募中！無經驗可！</p>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                <div class="card-body p-0">
+
+                  <ul>
+
+
+                    <li>佐登妮絲美容上市集團</li>
+                    <li>全台【美容師、醫美人員】招募</li>
+                    <li>無經驗可不限科系，供教育訓練</li>
+                    <li>海外發展機會、各項獎金、紅利</li>
+                  </ul>
+                  <div class="text-right ">
+                    <a class="text-decoration-none" href="#">更多職缺</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+
+                <h5 class="mb-0">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="title ">
+                      【店長候補】38K起薪
+                    </div>
+                    <p>
+                      我們是溫暖的工作團隊，擁有共同目標，邀請你一起朝夢想前進！
+                    </p>
+
+                  </button>
+
+
+                </h5>
+
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                <div class="card-body">
+
+
+                  <ul>
+                    <li>無經驗可，歡迎新鮮人</li>
+                    <li>實現夢想，擁抱管理者未來</li>
+                    <li>制度完善，考核通過即加薪</li>
+                    <li>溫暖團隊，月休8日以上</li>
+                  </ul>
+                  <div class="text-right ">
+                    <a class="text-decoration-none" href="#">更多職缺</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
 
       </div>
     </div>
@@ -494,66 +761,55 @@
       <p>熱門企業</p>
       <div class="row border-info">
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c1.gif">
+
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c2.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c3.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c4.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c5.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c6.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c7.gif">
         </div>
 
       </div>
       <div class="row border-info">
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-8.gif">
+
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c9.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-10.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-11.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-12.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-13.gif">
         </div>
         <div class="col d-flex border flex-column justify-content-center align-items-center">
-          <img src="https://picsum.photos/50/50/?random=11">
-          <div class="m-auto">company name</div>
+          <img src="c-14.gif">
         </div>
 
       </div>
+
 
 
     </div>
@@ -565,43 +821,88 @@
       <p>
         職場焦點
       </p>
-      <div class="row">
-        <div class="col-4">
-          <div class="card">
-            <img src="https://picsum.photos/200/150/?random=1" class="card-img-top">
+      <div class="row text-secondary" style="font-size: 14px;">
+        <div class="col-4 ">
+          <div class="card h-100">
+            <img src="f1.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <div class="card-title p-0">
+                <p class="text-dark font-weight-bolder" >她辭穩定工作做喜歡的事，卻低潮八年！</p>
+                <p>爸媽知道勸不動她，乾脆讓她撞牆，自己找到出路...</p>
+              </div>
+
+
+
+              <p class="card-text  p-0 m-0">
+              <ul>
+                <li>建中畢業考不進台清交，他選這個沒人想做的工作</li>
+                <li>同學都進台積電、聯發科，他的職涯為何屢碰壁？</li>
+                <li>新進公司不敢請假！就醫時，已是淋巴癌末...</li>
+              </ul>
+              </p>
+
+
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="https://picsum.photos/200/150/?random=1" class="card-img-top">
+        <div class="col-4 ">
+          <div class="card h-100">
+            <img src="f2.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <div class="card-title p-0">
+                <p class="text-dark font-weight-bolder">【百大企業人資 免費線上履歷健診】</p>
+                <p>點選綠燈線上志工顧問，開始一對一改履歷！</p>
+              </div>
+
+
+
+
+
+
+
+
+              <p class="card-text  p-0 m-0">
+              <ul>
+                <li>【歡迎畢業生】精選工作，主動應徵錄取快</li>
+                <li>找工作求帶！應徵前參考【學長姐畢業出路】>></li>
+                <li>畢業第一份工作薪資待遇如何？馬上看 >></li>
+                <li>高年級診療輔導</li>
+                <li>你，到底適合什麼工作？你，真的知道嗎？</li>
+              </ul>
+              </p>
+
+
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card">
-            <img src="https://picsum.photos/200/150/?random=1" class="card-img-top">
+        <div class="col-4 ">
+          <div class="card h-100">
+            <img src="f3.jpg" class="card-img-top">
 
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="card-body p-0">
+              <div class="card-title p-0">
+                <p class="text-dark font-weight-bolder">你，到底適合什麼工作？你，真的知道嗎？</p>
+                <p>職涯路迷路無解，國際認證教練 陪你找方向>></p>
+
+
+              </div>
+
+              <p class="card-text  p-0 m-0">
+              <ul>
+                <li>20年外商人資，一對一諮詢：中英履歷面試！</li>
+                <li>撬動人生的槓桿◆集團財務長的職涯進階諮詢</li>
+                <li>後疫情時期求職◆職場專家一對一諮詢</li>
+
+              </ul>
+              </p>
+
+
             </div>
           </div>
         </div>
+
 
       </div>
     </div>
@@ -612,23 +913,28 @@
       <p class="title">
         職場前輩
       </p>
-      <div class="row">
+      <div class="row bg-light">
         <div class="col-9">
           <div class="d-flex py-5 ">
-            <img src="https://picsum.photos/200/200/?random=1" class="rounded-circle">
-            <div class="mx-5
-                ">
-              <p>i am title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum consectetur v</p>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, itaque! Ipsam culpa dicta
-                consectetur minima? Molestias consectetur magni vero quia.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eum tenetur ipsam voluptatum suscipit
-                voluptate omnis consequuntur similique perferendis officiis.
+            <img src="senior.jpg" class="rounded-circle">
+            <div class="mx-5 ">
+
+              
+
+
+
+
+              <p class="font-weight-bolder">燒光三億！台大資優生從雲端跌落，公司裁員剩他一人...
+                </p>
+              <p>和沛科技前後由鴻海投資2.9億元，翟本喬個人投資兩千兩百多萬，和沛員工約五十位共同投資約兩千萬，沒有負債但股金全數歸零！失敗嗎？翟本喬說，眼前不成功，並非一生的失敗，雖然這次對他來說，的確是非常大的打擊...
               </p>
+
+
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <p>
+        <div class="col-3 py-5">
+          <p class="font-weight-bolder">
             關於前輩
           </p>
           <ul>
